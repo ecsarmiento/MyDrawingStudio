@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arts Studio Drawing Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="studio-container">
+    <header>
+      <h1>🎨 Arts Studio Drawing Simulation</h1>
+      <p>Draw, paint, create — save your masterpiece!</p>
+    </header>
+    <div class="workspace">
+      <aside class="tools-panel">
+        <div class="tool-group">
+          <h3>Brush</h3>
+          <label>Color: <input type="color" id="colorPicker" value="#000000"></label>
+          <label>Size: <input type="range" id="brushSize" min="1" max="50" value="5"></label>
+          <label>Opacity: <input type="range" id="opacity" min="0.1" max="1" step="0.1" value="1"></label>
+          <h3>Tools</h3>
+          <button id="brushTool" class="active">✏️ Brush</button>
+          <button id="eraserTool">🧹 Eraser</button>
+          <button id="clearBtn">🗑️ Clear</button>
+          <h3>Save & Export</h3>
+          <button id="downloadBtn">💾 Download Image</button>
+          <span id="statusMsg"></span>
+        </div>
+      </aside>
+      <main class="canvas-wrapper">
+        <canvas id="drawingCanvas"></canvas>
+      </main>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
